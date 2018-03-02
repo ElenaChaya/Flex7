@@ -1,0 +1,10 @@
+mixin mainNavList(title)
+	li 
+		a(href="#").main-nav__link= title
+
+
+ul.main-nav__list
+	+mainNavList('Services')
+	+mainNavList('Cost')
+	+mainNavList('Portfolio')
+	+mainNavList('Reviews')
