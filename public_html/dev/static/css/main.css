@@ -4722,6 +4722,9 @@ a {
   text-decoration: none;
   color: #000;
 }
+b {
+  font-family: 'RubikMedium', Arial, sans-serif;
+}
 audio,
 canvas,
 iframe,
@@ -4779,13 +4782,6 @@ button {
   margin: 0 auto;
   padding: 0px 10px;
 }
-.main-nav__list li {
-  display: inline-block;
-  margin-right: 20px;
-}
-.main-nav__list li:last-child {
-  margin-right: 0;
-}
 .g-social__list li {
   display: inline-block;
   margin: 0 10px;
@@ -4802,6 +4798,11 @@ button {
 .g-social__link.g-social__link--fb {
   background: url("../img/svg/facebook.svg") 0 0 no-repeat;
   background-size: 100%;
+}
+.g-section-title {
+  font-family: 'RubikMedium', Arial, sans-serif;
+  font-size: 40px;
+  color: #eecd7d;
 }
 header {
   position: absolute;
@@ -4846,6 +4847,13 @@ header .container {
       -ms-flex-align: center;
           align-items: center;
 }
+.main-nav__list li {
+  display: inline-block;
+  margin-right: 20px;
+}
+.main-nav__list li:last-child {
+  margin-right: 0;
+}
 .top-banner {
   background: url("../img/general/bg-blue.jpg") 0 0 no-repeat;
   background-size: cover;
@@ -4869,8 +4877,7 @@ header .container {
   font-size: 50px;
   font-weight: normal;
   font-family: madiumFont;
-  line-height: 1.2;
-  color: #000;
+  line-height: 1.2s;
 }
 .top-banner__title--yellow {
   color: #eecd7d;
@@ -4879,6 +4886,51 @@ header .container {
   width: 80%;
   font-size: 30px;
   font-family: 'RubikLight', Arial, sans-serif;
+  line-height: 1.2;
+}
+.about-me {
+  padding-top: 80px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#babcc1), to(#e8e8e9));
+  background: linear-gradient(to bottom, #babcc1, #e8e8e9);
+}
+.about-me__content {
+  padding: 0px 80px 80px 45%;
+  background: url("../img/general/man.png") 0 0 no-repeat;
+  background-size: contain;
+  color: #140e2a;
+}
+.about-me__content .g-section-title {
+  margin-bottom: 50px;
+  color: #140e2a;
+}
+.about-me__list {
+  margin-bottom: 50px;
+}
+.about-me__list li {
+  position: relative;
+  padding-left: 60px;
+  margin-bottom: 30px;
+  line-height: 1.2;
+  font-family: 'RubikLight', Arial, sans-serif;
+}
+.about-me__list li:last-child {
+  margin-bottom: 0;
+}
+.about-me__list li:before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 30px;
+  display: block;
+  background-image: url("../img/sprite/sprite.png");
+  background-position: 0px 0px;
+  width: 21px;
+  height: 18px;
+}
+.about-me__text {
+  padding-left: 60px;
+  font-family: 'RubikLight', Arial, sans-serif;
+  font-size: 28px;
   line-height: 1.2;
 }
 @media screen and (max-width: 1240px) {
