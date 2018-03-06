@@ -1,1 +1,23 @@
+mixin experience__item(number, descr, text, big)
+    .experience__item(class=big)
+        span.experience-item__number= number
+        span.experience-item__descr= descr
+        span.experiencev-item__text= text
 
+section.experience
+    .container
+        .experience_content
+            h2.g-section-title I am entrusted with holding holidays because:
+            .experience__block
+                +experience__item('7', 'years', 'experience of events', 'experience__item-big')
+                +experience__item('592', 'Weddings', 'held')
+                +experience__item('375', 'Anniversaries', 'and over 100 corporate parties')
+                +experience__item('35000', 'The guests', 'appreciated our work')
+            p.experience__text Such experience gives a guarantee <br> that
+                b  our performance will definitely like you!
+            .review 
+                span.review-author Name Surname:
+                a(href="https://www.facebook.com/nikolai.baskov").review-link facebook.com/nikolai.baskov
+                p.review-title "... You were like your own person! I wanted to participate in everything and support any idea !!!! It is inexpressibly cool! ..."
+                a(href="javascript:void(0);").experience__reviews-link see more reviews   
+                

@@ -4695,7 +4695,7 @@ img.mfp-img {
   color: #717aff;
 }
 html {
-  line-height: 1;
+  line-height: 1.2;
   font-size: 22px;
 }
 body {
@@ -4724,6 +4724,7 @@ a {
 }
 b {
   font-family: 'RubikMedium', Arial, sans-serif;
+  font-weight: normal;
 }
 audio,
 canvas,
@@ -4803,6 +4804,7 @@ button {
   font-family: 'RubikMedium', Arial, sans-serif;
   font-size: 40px;
   color: #eecd7d;
+  text-align: center;
 }
 header {
   position: absolute;
@@ -4877,7 +4879,6 @@ header .container {
   font-size: 50px;
   font-weight: normal;
   font-family: madiumFont;
-  line-height: 1.2s;
 }
 .top-banner__title--yellow {
   color: #eecd7d;
@@ -4886,7 +4887,6 @@ header .container {
   width: 80%;
   font-size: 30px;
   font-family: 'RubikLight', Arial, sans-serif;
-  line-height: 1.2;
 }
 .about-me {
   padding-top: 80px;
@@ -4902,6 +4902,7 @@ header .container {
 .about-me__content .g-section-title {
   margin-bottom: 50px;
   color: #140e2a;
+  text-align: left;
 }
 .about-me__list {
   margin-bottom: 50px;
@@ -4910,7 +4911,6 @@ header .container {
   position: relative;
   padding-left: 60px;
   margin-bottom: 30px;
-  line-height: 1.2;
   font-family: 'RubikLight', Arial, sans-serif;
 }
 .about-me__list li:last-child {
@@ -4931,7 +4931,102 @@ header .container {
   padding-left: 60px;
   font-family: 'RubikLight', Arial, sans-serif;
   font-size: 28px;
-  line-height: 1.2;
+}
+.experience {
+  padding: 70px 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#16454d), to(#447879));
+  background: linear-gradient(to bottom, #16454d, #447879);
+}
+.experience_content .g-section-title {
+  margin-bottom: 40px;
+}
+.experience_content .review {
+  width: 100%;
+  max-width: 620px;
+  margin: 0 auto;
+}
+.experience_content .review-title {
+  margin-bottom: 30px;
+}
+.experience__block {
+  widht: 100%;
+  max-width: 860px;
+  margin: 0 auto 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.experience__item {
+  text-align: center;
+  padding: 25px 20px 5px;
+  border-left: 1px solid #fff;
+}
+.experience__item:last-child {
+  border-right: 1px solid #fff;
+}
+.experience__item span {
+  display: block;
+  margin-bottom: 10px;
+  color: #fff;
+  font-family: 'RubikMedium', Arial, sans-serif;
+}
+.experience__item span.experience-item__text {
+  margin-bottom: 0;
+  color: #eecd7d;
+  font-size: 20px;
+}
+.experience__item span.experience-item__descr {
+  font-family: 'RubikLight', Arial, sans-serif;
+  font-size: 35px;
+}
+.experience__item.experience__item-big .experience-item__number {
+  font-size: 110px;
+}
+.experience-item__number {
+  font-size: 80px;
+}
+.experience__text {
+  padding: 0 25px;
+  font-family: 'RubikLight', Arial, sans-serif;
+  color: #fff;
+  text-align: center;
+  font-size: 35px;
+}
+.experience__text:after {
+  content: '';
+  display: block;
+  margin: 40px auto 20px;
+  width: 100%;
+  max-width: 750px;
+  height: 1px;
+  background-color: #fff;
+}
+.experience__reviews-link {
+  color: #fff;
+  font-size: 20px;
+  font-family: 'RubikLight', Arial, sans-serif;
+  text-decoration: underline;
+}
+.review {
+  color: #fff;
+  font-family: 'RubikLight', Arial, sans-serif;
+}
+.review-author {
+  display: block;
+  margin-bottom: 5px;
+}
+.review-link {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #fff;
+}
+.review-title {
+  color: #eecd7d;
+  font-size: 20px;
+  font-family: 'RubikMedium', Arial, sans-serif;
 }
 @media screen and (max-width: 1240px) {
   .price {
