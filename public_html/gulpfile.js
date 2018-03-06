@@ -1,3 +1,41 @@
+//'use strict';
+//var gulp = require('gulp'),
+//        gp = require('gulp-load-plugins')();
+//
+//
+//gulp.task('pug', function () {
+//    return gulp.src('src/pug/pages/*.pug')
+//            .pipe(gp.pug({
+//                pretty: true
+//            }))
+//            .pipe(gulp.dest('build'));
+//});
+//gulp.task('stylus', function () {
+//    return gulp.src('src/static/stylus/main.styl')
+//            .pipe(gp.sourcemaps.init())
+//            .pipe(gp.stylus({}))
+//            .pipe(gp.autoprefixer({
+//                browsers: ['last 10 versions'],
+//                cascade: false
+//            }))
+//            .on("error", gp.notify.onError({
+//                message: "Error: <%= error.message %>",
+//                title: "style"
+//            }))
+//            .pipe(gp.csso())
+//            .pipe(gp.sourcemaps.write())
+//            .pipe(gulp.dest('build/static/css/'));
+//});
+//
+////gulp.task('watch', function () {
+////    gulp.watch('src/pug/**/*.pug', gulp.series('pug'));
+////    gulp.watch('src/static/**/*.styl', gulp.series('stylus'));
+////});
+////
+////gulp.task('default', gulp.series(gulp.parallel('pug', 'stylus'),
+////        'watch'
+////        ));
+
 var gulp = require('gulp'),
     pug = require('gulp-pug'),
     browsersync = require('browser-sync'),
