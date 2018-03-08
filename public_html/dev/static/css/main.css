@@ -4699,7 +4699,7 @@ html {
   font-size: 22px;
 }
 body {
-  font-family: 'RubikRegular', Arial, sans-serif;
+  font-family: 'RubikLight', Arial, sans-serif;
 }
 h1,
 h2,
@@ -4806,6 +4806,10 @@ button {
   font-weight: normal;
   color: #eecd7d;
   text-align: center;
+  margin-bottom: 35px;
+}
+.g-section-title.g-section-title--mini {
+  font-size: 35px;
 }
 .g-section-title--small {
   margin-bottom: 20px;
@@ -4995,7 +4999,6 @@ header .container {
   position: relative;
   padding-left: 60px;
   margin-bottom: 30px;
-  font-family: 'RubikLight', Arial, sans-serif;
 }
 .about-me__list li:last-child {
   margin-bottom: 0;
@@ -5013,16 +5016,12 @@ header .container {
 }
 .about-me__text {
   padding-left: 60px;
-  font-family: 'RubikLight', Arial, sans-serif;
   font-size: 28px;
 }
 .experience {
   padding: 70px 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#16454d), to(#447879));
   background: linear-gradient(to bottom, #16454d, #447879);
-}
-.experience_content .g-section-title {
-  margin-bottom: 40px;
 }
 .experience_content .review {
   width: 100%;
@@ -5062,7 +5061,6 @@ header .container {
   font-size: 20px;
 }
 .experience__item span.experience-item__descr {
-  font-family: 'RubikLight', Arial, sans-serif;
   font-size: 35px;
 }
 .experience__item.experience__item-big .experience-item__number {
@@ -5074,7 +5072,6 @@ header .container {
 }
 .experience__text {
   padding: 0 25px;
-  font-family: 'RubikLight', Arial, sans-serif;
   color: #fff;
   text-align: center;
   font-size: 35px;
@@ -5091,7 +5088,6 @@ header .container {
 .experience__reviews-link {
   color: #fff;
   font-size: 20px;
-  font-family: 'RubikLight', Arial, sans-serif;
   text-decoration: underline;
 }
 .review {
@@ -5124,7 +5120,6 @@ header .container {
 .small-section__text {
   color: #fff;
   font-size: 25px;
-  font-family: 'RubikLight', Arial, sans-serif;
 }
 .small-section__phone {
   color: #eecd7d;
@@ -5140,9 +5135,6 @@ header .container {
   width: 100%;
   max-width: 850px;
   margin: 0 auto;
-}
-.advantages-content .g-section-title {
-  margin-bottom: 30px;
 }
 .advantages-content .review {
   padding-left: 60px;
@@ -5193,6 +5185,29 @@ header .container {
 }
 .advantages-list b {
   color: #eecd7d;
+}
+.skills {
+  padding: 80px 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#29284d), to(#140e2a));
+  background: linear-gradient(to bottom, #29284d, #140e2a);
+}
+.skills .g-line-number {
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.skills-content {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+.skills__descr {
+  text-align: center;
+  color: #fff;
+  font-size: 28px;
+  font-family: 'RubikLight', Arial, sans-serif;
 }
 @media screen and (max-width: 1240px) {
   .price {
