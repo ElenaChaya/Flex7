@@ -4853,6 +4853,43 @@ button {
   width: 101px;
   height: 60px;
 }
+.g-line-number {
+  position: relative;
+  width: 100%;
+  max-width: 760px;
+  height: 70px;
+  margin: 0 auto;
+}
+.g-line-number span {
+  position: absolute;
+  left: 50%;
+  margin-left: -35px;
+  display: block;
+  width: 70px;
+  height: 70px;
+  padding-top: 6px;
+  background-color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 45px;
+  font-family: 'RubikMedium', Arial, sans-serif;
+}
+.g-line-number:before,
+.g-line-number:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  height: 1px;
+  margin-top: -0.5px;
+  width: 40%;
+  background-color: #fff;
+}
+.g-line-number:before {
+  left: 0;
+}
+.g-line-number:after {
+  right: 0;
+}
 header {
   position: absolute;
   width: 100%;
@@ -5093,6 +5130,69 @@ header .container {
   color: #eecd7d;
   font-size: 25px;
   font-family: 'RubikMedium', Arial, sans-serif;
+}
+.advantages {
+  padding: 80px 0 120px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#232e6f), to(#3d518d));
+  background: linear-gradient(to bottom, #232e6f, #3d518d);
+}
+.advantages-content {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+.advantages-content .g-section-title {
+  margin-bottom: 30px;
+}
+.advantages-content .review {
+  padding-left: 60px;
+}
+.advantages-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40px;
+}
+.advantages-icon span {
+  font-size: 110px;
+  color: #fff;
+  font-family: 'RubikMedium', Arial, sans-serif;
+}
+.advantages-text {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'RubikMedium', Arial, sans-serif;
+  color: #fff;
+}
+.advantages-list {
+  padding-bottom: 50px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+.advantages-list li {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  display: list-item;
+}
+.advantages-list li:before {
+  content: '-';
+  position: absolute;
+  margin-left: -15px;
+}
+.advantages-list li:last {
+  margin-bottom: 0px;
+}
+.advantages-list b {
+  color: #eecd7d;
 }
 @media screen and (max-width: 1240px) {
   .price {
