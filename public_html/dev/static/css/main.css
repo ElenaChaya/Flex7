@@ -5203,11 +5203,81 @@ header .container {
   max-width: 850px;
   margin: 0 auto;
 }
+.skills-content .review {
+  max-width: 700px;
+  padding-left: 60px;
+}
 .skills__descr {
+  margin-bottom: 30px;
   text-align: center;
   color: #fff;
   font-size: 28px;
-  font-family: 'RubikLight', Arial, sans-serif;
+}
+.music-item__wrap {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+}
+.music-item__wrap:after {
+  content: '';
+  display: block;
+  width: 100%;
+  max-width: 760px;
+  height: 1px;
+  margin: 50px auto 30px;
+  background-color: #fff;
+}
+.music-item {
+  width: 100%;
+  max-width: 760px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+.music-item__photo {
+  position: relative;
+  margin-right: 40px;
+}
+.music-item__pic {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.music-item__pic.music-item__pic--vocal {
+  background: url("../img/general/music/vocal.jpg") -100px 0 no-repeat;
+  background-size: cover;
+}
+.music-item__pic.music-item__pic--gitara {
+  background: url("../img/general/music/gitara.jpg") 0 0 no-repeat;
+  background-size: cover;
+}
+.music-item__pic.music-item__pic--accordion {
+  background: url("../img/general/music/accordion.jpg") 0 0 no-repeat;
+  background-size: cover;
+}
+.music-item__pic.music-item__pic--piano {
+  background: url("../img/general/music/piano.jpg") 0 0 no-repeat;
+  background-size: cover;
+}
+.music-item__text {
+  color: #fff;
+}
+.music-item__text b {
+  color: #eecd7d;
+}
+.music-item__info-top {
+  margin-bottom: 20px;
+}
+.music-item__title {
+  display: block;
+  font-family: 'RubikMedium', Arial, sans-serif;
+  font-size: 30px;
+  color: #eecd7d;
+}
+.music-item__descr {
+  color: #fff;
 }
 @media screen and (max-width: 1240px) {
   .price {
