@@ -4811,6 +4811,12 @@ button {
 .g-section-title.g-section-title--mini {
   font-size: 35px;
 }
+.g-dection-descr {
+  margin-bottom: 30px;
+  text-align: center;
+  color: #fff;
+  font-size: 28px;
+}
 .g-section-title--small {
   margin-bottom: 20px;
   font-size: 33px;
@@ -5207,12 +5213,6 @@ header .container {
   max-width: 700px;
   padding-left: 60px;
 }
-.skills__descr {
-  margin-bottom: 30px;
-  text-align: center;
-  color: #fff;
-  font-size: 28px;
-}
 .music-item__wrap {
   width: 100%;
   max-width: 760px;
@@ -5278,6 +5278,38 @@ header .container {
 }
 .music-item__descr {
   color: #fff;
+}
+.scenario {
+  padding: 80px 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#232e6f), to(#3d518d));
+  background: linear-gradient(to bottom, #232e6f, #3d518d);
+}
+.scenario .g-line-number {
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.scenario-content {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.scenario-list {
+  width: 100%;
+  max-width: 660px;
+  margin: 0 auto;
+  padding: 130px 70px 87px;
+  background: url("../img/general/scenario-list-bg.jpg") 0 0 no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+.scenario-list li {
+  margin-bottom: 20px;
+}
+.scenario-list li:last-child {
+  margin-botttom: 0;
 }
 @media screen and (max-width: 1240px) {
   .price {
