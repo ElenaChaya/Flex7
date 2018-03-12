@@ -47,9 +47,23 @@ $(document).ready(function () {
             enabled: true
             
         }
-        
-        
-        
+    });
+    
+    var iframe_id = [];
+    $('.portfolio-video__item iframe').each(function(key, value) {
+        if(value.id.length > 0) {
+            iframe_id.push(value.id);
+        }
+    });
+    
+    $('.portfolio-video-slider').on("click", ".js-portfolio-video-slider .slick-dots", function() {
+        $.each(iframe_id, function(key, value) {
+            $('.slick-track')
+                    .find('div:not(.slick-cloned)')
+                    .find('#' + iframe_id[key])[0]
+                    .contentWindow
+                    .postMessage('{"event":"command", "func":"' + 'pauseVideo' + '","args":""}', '*');
+        });
     });
     
 });
