@@ -44,7 +44,7 @@
     display inline-block
     height 50px
     line-height 50px
-    padding 0 30px 0 80px
+    padding 0 30px 0 70px
     margin-bottom 30px
     font-family mediumFont
     font-size 28px
@@ -72,6 +72,10 @@
             right -120px
             display block
             sprite($s-arrow)
+
+    &.g-btn--scenario
+        &:before
+            sprite($s-scenario)
 
 .g-line-number
     position relative
