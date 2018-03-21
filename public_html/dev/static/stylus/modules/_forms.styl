@@ -1,0 +1,115 @@
+.g-radio__text
+    display inline-block
+    height 40px
+    line-height 38px
+    padding 0 10px //20px 
+    border 1px solid grayColor
+    border-radius 30px
+    background-color #fff
+    font-size 18px
+    cursor pointer
+    
+    
+    &:hover
+        background linear-gradient(to bottom, #bbbbbb, #ededed)
+
+.g-radio__btn
+    display none
+    
+    &:checked
+        
+        & +.g-radio__text
+            background linear-gradient(to bottom, #db2929, #912f2f)
+            color #fff
+
+.g-input
+    width 100%
+    height 40px
+    line-height 38px
+    padding 0 20px
+    border 1px solid grayColor
+    background-color #fff
+    border-radius 10px
+
+.form-line
+    margin-bottom 45px
+    text-align center
+
+    &:last-of-type
+        margin-bottom 0
+
+.form-line--town
+    
+    .g-input
+        max-width 300px
+
+.form-line__half
+    display flex
+    justify-content space-between
+
+.form-line__title
+    display inline-block
+    font-family mediumFont
+    font-size 20px
+
+    &.form-line__title--right
+        margin-right 15px
+
+    &.form-line__title--bottom
+        margin-bottom 25px
+
+.form-seasons__wrap
+    display flex
+    justify-content space-between
+    flex-wrap wrap
+
+    
+
+.form-seasons
+    display flex
+    justify-content space-between
+    align-items center
+    flex-basis 55% //59%
+
+    .g-radio
+        margin-bottom 10px
+        
+        &:nth-of-type(n+2)
+            margin-bottom 0
+
+    .g-radio__text
+        display inline-block
+
+.form-guests-number
+    flex-basis 45%
+
+.form-place
+    flex-basis 53%
+
+.g-input__wrap
+    position relative
+
+    .g-input
+        padding-left 30px
+
+    &:before
+        content ''
+        position absolute
+        left 10px
+        top 50%
+        transform translateY(-50%)
+        display block
+
+
+    &.g-input__wrap--user
+        &:before
+            sprite($s-user)
+
+    &.g-input__wrap--phone
+        &:before
+            sprite($s-phone)
+    
+    
+    
+            
+

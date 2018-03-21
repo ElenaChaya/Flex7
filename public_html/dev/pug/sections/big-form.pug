@@ -1,0 +1,66 @@
+mixin radioBtn(name, text)
+     label.g-radio(class=name)
+        input(type="radio" name=name).g-radio__btn
+        span.g-radio__text=text
+
+section.big-form
+    .container
+        .big-form-content
+            h2.g-section-title.g-section-title--mini Find out the cost of the services of the host
+            p.g-dection-descr Select options so that I can reply <br> to your question by cost 
+            form.form-price
+                .form-price__top
+                    .form-line.form-line--town
+                        label.form-line__title.form-line__title--right City:
+                        input(type="text" placeholder="Input your city name").g-input
+                    .form-line.form-line__half
+                        .form-seasons
+                            span.form-line__title.form-line__title--right Season:
+                            .form-seasons__wrap
+                                +radioBtn('season', 'Winter')
+                                +radioBtn('season', 'Spring')
+                                +radioBtn('season', 'Summer')
+                                +radioBtn('season', 'Fall')
+                        .form-days
+                            span.form-line__title.form-line__title--bottom Day of the week:
+                            .form-days__wrap
+                                +radioBtn('day', 'Sun-Mon')
+                                +radioBtn('day', 'Fri-Sat')
+                    .form-line.form-line__half
+                        .form-guests
+                            span.form-line__title.form-line__title--bottom Number of guests:
+                            .form-guests__wrap
+                                +radioBtn('guests-number', '<100')
+                                +radioBtn('guests-number', '100-200')
+                                +radioBtn('guests-number', '>200')
+                        .form-place
+                            span.form-line__title.form-line__title--bottom Place:
+                            .form-place__wrap
+                                +radioBtn('place', 'Restaurant')
+                                +radioBtn('place', 'Hotel')
+                                +radioBtn('place', 'Outdoors')
+                    .form-line
+                        span.form-line__title.form-line__title--bottom Staff:
+                        .form-personnel__wrap
+                            +radioBtn('personnel', 'DJ')
+                            +radioBtn('personnel', 'Photographer')
+                            +radioBtn('personnel', 'Cameraman')
+                            +radioBtn('personnel', 'Artists')
+                    .form-line
+                        span.form-line__title.form-line__title--bottom Equipment:
+                        .form-equipment__wrap
+                            +radioBtn('equipment', 'Sound')
+                            +radioBtn('equipment', 'Light')     
+
+                .form-price__bottom 
+                    .form-line.form-line__half
+                        .g-input__wrap.g-input__wrap--user
+                            input(type="text" placeholder="Enter your name").g-input
+                        .g-input__wrap.g-input__wrap--phone  
+                            input(type="text" placeholder="Enter phone").g-input
+                    button(type="submit").g-btn.g-btn--price
+                        span Find the cost
+            p.big-form__text Depending on the season and the days of the week, 
+                b discounts 
+                |  can be up 
+                b  to 50%            
