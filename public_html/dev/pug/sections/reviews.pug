@@ -1,0 +1,75 @@
+mixin reviewPhoto(title)
+    .review-photo(style=`background-image: url('static/img/content/reviews/${title}.jpg')`)
+
+section.reviews
+    .container
+        .reviews-content
+            h2.g-section-title.g-section-title--mini.arrow More than half of clients come to me on recommendations
+            .reviews-slider.line
+                .slider__controlls.slider__prev
+                .slider__controlls.slider__next
+                .js-reviews-slider
+                    .review-slider__item
+                        .review-wrap
+                            +reviewPhoto('1')
+                            .review 
+                                span.review-author Name Surname:
+                                a(href="https://www.facebook.com/nikolai.baskov").review-link facebook.com/nikolai.baskov
+                                p.review-title "... Prepared an interesting script and held a wedding at the highest level ..."
+                                p.review-text Thank you for the perfectly organized wedding)))
+                                    b  Everything was just super.
+                                    |  You have prepared an interesting wedding script and held a wedding at the highest level. My husband and our guests were delighted with your professionalism.
+                                    b  I recommend it to everyone - if you want a really cheerful wedding, where each guest will have something of their own - contact us !!!
+
+                        .review-wrap.review-wrap--right
+                            +reviewPhoto('2')
+                            .review 
+                                span.review-author Name Surname:
+                                a(href="https://www.facebook.com/nikolai.baskov").review-link facebook.com/nikolai.baskov
+                                p.review-title "... Everything was kind, cozy and fun."<br>You have a wonderful script and well-chosen music, all the wishes are taken into account, all the guests were having fun and dancing with all their heart! ... "
+                                p.review-text 
+                                    b We are very glad that they addressed you!
+                                    |  Our wedding was a great success thanks to you! Everything was kind, cozy and fun. We were delighted! You have a wonderful script and well-chosen music, all the wishes are taken into account, all the guests were having fun and dancing with all their heart!
+                                    b  A special THANKS I'd like to tell you for his beautiful voice!
+                                    |  Guests and we liked all the songs in his performance !!! Our holiday was very cheerful and flew in one go largely thanks to you!
+
+                    .review-slider__item
+                        .review-wrap
+                            +reviewPhoto('3')
+                            .review 
+                                span.review-author Name Surname:
+                                a(href="https://www.facebook.com/baskov").review-link facebook.com/baskov
+                                p.review-title "... Prepared an interesting script and held a wedding at the highest level ..."
+                                p.review-text Thank you for the perfectly organized wedding)))
+                                    b  Everything was just super.
+                                    |  You have prepared an interesting wedding script and held a wedding at the highest level. My husband and our guests were delighted with your professionalism.
+                                    b  I recommend it to everyone - if you want a really cheerful wedding, where each guest will have something of their own - contact us !!!
+
+                        .review-wrap.review-wrap--right
+                            +reviewPhoto('4')
+                            .review 
+                                span.review-author Name Surname:
+                                a(href="https://www.facebook.com/baskov").review-link facebook.com/baskov
+                                p.review-title "... Everything was kind, cozy and fun."<br>You have a wonderful script and well-chosen music, all the wishes are taken into account, all the guests were having fun and dancing with all their heart! ... "
+                                p.review-text 
+                                    b We are very glad that they addressed you!
+                                    |  Our wedding was a great success thanks to you! Everything was kind, cozy and fun. We were delighted! You have a wonderful script and well-chosen music, all the wishes are taken into account, all the guests were having fun and dancing with all their heart!
+                                    b  A special THANKS I'd like to tell you for his beautiful voice!
+                                    |  Guests and we liked all the songs in his performance !!! Our holiday was very cheerful and flew in one go largely thanks to you!
+                                    
+            .reviews-video
+                h2.g-section-title.g-section-title--mini See live feedback from our customers
+                p.g-dection-descr Pleasant impressions speak for themselves
+                .video-slider
+                        .js-video-slider
+                            .video__item
+                                iframe( width="100%" height="315" src="https://www.youtube.com/embed/09R8_2nJtjg?enablejsapi=1" frameborder="0" allowfullscreen id="port-vid-5")
+
+                            .video__item
+                                iframe( width="100%" height="315" src="https://www.youtube.com/embed/09R8_2nJtjg?enablejsapi=1" frameborder="0"  allowfullscreen id="port-vid-6")
+
+                            .video__item
+                                iframe( width="100%" height="315" src="https://www.youtube.com/embed/09R8_2nJtjg?enablejsapi=1" frameborder="0" allowfullscreen id="port-vid-7")
+
+                            .video__item
+                                iframe( width="100%" height="315" src="https://www.youtube.com/embed/09R8_2nJtjg?enablejsapi=1" frameborder="0"  allowfullscreen id="port-vid-8")

@@ -2,7 +2,7 @@
 
 $(document).ready(function () {
     
-    $('.js-portfolio-video-slider').slick({
+    $('.js-video-slider').slick({
         dots: true,
         arrows: false
     });
@@ -11,7 +11,7 @@ $(document).ready(function () {
         slidesToShow: 5,
         slidesToScroll: 1,
         prevArrow: '.portfolio-photo__prev',
-        nextArrow: '.portfolio-photo__next',   
+        nextArrow: '.portfolio-photo__next',  
         responsive: [{
             breakpoint: 1024,
             settings: {
@@ -32,8 +32,29 @@ $(document).ready(function () {
                 slidesToShow: 2,
                 slidesToScroll: 2
             }
+        }, {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
         }]
     });
+    
+    
+    $('.js-reviews-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: '.slider__prev',
+        nextArrow: '.slider__next'
+    });
+//    $('.js-portfolio-photo-slider').slick({
+//        slidesToShow: 3,
+//        slidesToScroll: 1,
+//        prevArrow: '.portfolio-photo__prev',
+//        nextArrow: '.portfolio-photo__next'
+//    });
+    
     
     $('.js-portfolio-photo-slider').magnificPopup({
         delegate: 'a',
@@ -50,13 +71,13 @@ $(document).ready(function () {
     });
     
     var iframe_id = [];
-    $('.portfolio-video__item iframe').each(function(key, value) {
+    $('.video__item iframe').each(function(key, value) {
         if(value.id.length > 0) {
             iframe_id.push(value.id);
         }
     });
     
-    $('.portfolio-video-slider').on("click", ".js-portfolio-video-slider .slick-dots", function() {
+    $('.video-slider').on("click", ".js-video-slider .slick-dots", function() {
         $.each(iframe_id, function(key, value) {
             $('.slick-track')
                     .find('div:not(.slick-cloned)')

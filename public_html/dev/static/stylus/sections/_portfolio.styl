@@ -12,8 +12,9 @@
     width 100%
     max-width 750px
     margin 0 auto 50px
-
-        
+    border-bottom 1px solid #fff
+    
+    
 
     .slick-dots
         position static
@@ -28,15 +29,9 @@
         button
             opacity 0
 
-.portfolio-photo
-    &:before
-        content ''
-        display block
-        width 100%
-        max-width 950px
-        height 1px
-        margin 0 auto 60px
-        background-color #fff
+.portfolio-video__item
+    margin-bottom 30px
+    
 
 .portfolio-photo-slider 
     position relative
@@ -71,21 +66,3 @@
     height 160px
     margin 0 auto 30px
     background-size cover 
-
-.portfolio-photo__controlls
-    position absolute
-    top 50%
-    transform translateY(-50%)
-    display block
-    cursor pointer
-
-.portfolio-photo__prev
-    left 0
-    sprite($s-arrow-left)
-
-.portfolio-photo__next
-    right 0
-    sprite($s-arrow-right)
-
-
-        

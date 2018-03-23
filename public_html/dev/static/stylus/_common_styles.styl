@@ -36,11 +36,19 @@
     font-size 28px
            
 .g-section-title--small
-        margin-bottom 20px
-        font-size 33px
+    margin-bottom 20px
+    font-size 33px
 
 
-    
+ .arrow 
+    position relative
+
+    &:after
+        content ''
+        position absolute
+        display block
+        sprite($s-arrow)
+
 
 .g-btn
     position relative
@@ -71,12 +79,8 @@
             sprite($s-date)
 
         &:after
-            content ''
-            position absolute
             top -20px
             right -120px
-            display block
-            sprite($s-arrow)
 
     &.g-btn--scenario
         &:before
@@ -129,4 +133,30 @@
 
     &:after
         right 0
+
+.slider__controlls, .portfolio-photo__controlls
+    position absolute
+    top 50%
+    transform translateY(-50%)
+    display block
+    cursor pointer
+
+.slider__prev, .portfolio-photo__prev
+    left 0
+    sprite($s-arrow-left)
+
+.slider__next, .portfolio-photo__next
+    right 0
+    sprite($s-arrow-right)
+
+.line
+    &:after
+        content: '';
+        display: block;
+        margin: 40px auto 20px;
+        width: 100%;
+        max-width: 750px;
+        height: 1px;
+        background-color: #fff;
+    
         
