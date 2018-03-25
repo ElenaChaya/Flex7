@@ -1,0 +1,38 @@
+mixin questionItem(title, answer)
+    .question
+        span.question-title= title
+        .question-answer= answer
+
+section.questions
+    .container
+        .questions-content
+            .questions-photo
+                img(src="static/img/general/question-man.png" alt="photo")
+                span.question-photo__text   Your questions are ready to answer in person!
+                span.question-photo__text  Call: 
+                a(href="tel: +1234567890").question-phone 1234567890
+            .question-list
+                .question
+                    span.question-title 1. How much does the service cost?
+                    .question-answer
+                        p 
+                            b Several factors affect the cost of holding
+                            |  - this is the number of hours, the day of the week, the month, the city, the number of guests, the venue, the presence of a separate DJ and illuminator, the number of sound and lighting equipment, etc. The cost of our work is from 25 to 150 thousand rubles. Write or call me, and I will pick up for you the optimal cost, taking into account the possible discount, which for burning and unpopular dates reaches 50%.
+                +questionItem('2. How is the script made?', 'At the e-mail address you specify, I send a questionnaire for a script that contains a lot of questions, but the answers to them will allow me to write the original script, taking into account all your requirements. The questionnaire is sent twice - the first after the agreement to hold, the second one a week before the wedding. In the latest version of the questionnaire, you make all necessary corrections and changes that may arise from the time of our first agreement.')
+                +questionItem('3. Will there be no vulgar competitions?', 'No, it will not. The program is constantly updated, and it includes only the brightest modern entertainment and competitions.')
+                +questionItem('4. What is included in the program?', 'The program of the presentation (entry) will include what you choose from the questionnaire for the script. In short, it is a meeting of guests in the Welcome Zone, the organization of the newlyweds meeting for bread and salt, the presentation of gifts, the conduct of a holiday, playing musical instruments, live vocals, including a duet with a DJ for two voices, holiday, congratulations, toasts, dance breaks, competitive program. Organization of the final of the wedding and the farewell of the newlyweds. In addition, you get an experienced photographer with professional equipment for the whole evening. 20 best shots you get as a gift from the presenter.')
+                +questionItem('5. Will there be time for communication and feasting?', 'Of course it will be! I understand perfectly well that friends and relatives gather for the wedding, which could not be seen for a decade. And they, elementary, you need to talk, talk at the table or during breaks. The same applies to serving dishes. I always take a break in the program and I give my guests a peaceful meal of food. I am an unobtrusive host who knows how to feel the mood, the desire of the public, and give her what she wants at that moment. I do not set a goal for myself - to demonstrate everything that I can. The wedding is not a benefit for the host, but a holiday for the newlyweds and their guests. The script during the holiday is adjusted and adjusted to the mood of the public.')
+                +questionItem('6. And if there is a force majeure at the wedding?', 'It was such once. On a hot summer day, a carry was melted, supplying electricity to the tent where the wedding was taking place. For 20 minutes there was no electricity. But the guests did not miss me - they sang and danced under a button accordion and chorused several favorite songs with a guitar.')
+                +questionItem('7. Do you have a DJ and equipment for the holiday?', 'Yes, I have a permanent DJ who comes with a full set of professional sound and lighting equipment. Sound power from 500 W to 2 kW. If you need more, we can attract our partners who voice the concerts of the stars. The same goes for the powerful lighting equipment, complete with a light engineer who brings along a smoke machine and soap bubbles and a coffee machine and a screen with a projector.')
+                +questionItem('8. How long have you been working on the holiday?', 'Usually, from three to six hours. If the guests are unraveling, we can work for another hour without additional payment, provided that a significant discount has not been made before.')
+                .question
+                    span.question-title 9. How will the host be dressed?
+                    .question-answer
+                        p 
+                            b I always dress to match the level of the holiday.
+                            |  We discuss this issue separately in advance with the newlyweds. If the wedding takes place in a restaurant and guests come in costumes and beautiful evening dresses, I put on a suit. If the wedding is in nature, where guests in shorts and T-shirts, I dress in their style, but a little stricter.
+                +questionItem('10. How to book a host on our date?', 'The guarantee of reservation dates is a deposit. It is usually small - 10-50%. But we must understand that the advance payment, unlike the advance payment, in the event of the client is refusal of the service, is not returned. The customer can use the deposited deposit 100% when ordering on a different date, if it is free from the master.')
+                
+
+                            
+

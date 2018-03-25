@@ -1,1 +1,18 @@
+mixin stagesItem(num, title, text)
+    .stages-item
+        span.stages-item__number= num
+        .stages-item__content
+            span.stages-item__title= title
+            p.stages-item__text= text
 
+section.stages
+    .container
+        .stages__content
+            h2.g-section-title Stages of work
+            .stages-item__wrap
+                +stagesItem('1', 'Call, application', 'First of all, find out if the date of your wedding is free. We agree on a method of communication (telephone, e-mail, Viber, WhatsApp, Skype) or about a meeting.')
+                +stagesItem('2', 'Meeting, acquaintance', 'We discuss the features of your wedding (format, venue, number of guests, etc.). Determined by cost.')
+                +stagesItem('3', 'Contract, deposit', 'After a positive decision - make an advance payment of 10-50%, which is a guarantee of booking your date.')
+                +stagesItem('4', 'Scenario', 'You are sent a questionnaire for the script. you answer all the questions in it, describe your wishes and send me.')
+                +stagesItem('5', 'Agreement', 'A week before the celebration, you again look through the questionnaire, make corrections and send me.')
+                +stagesItem('6', 'Celebration', 'We create the atmosphere of the holiday, give the newlyweds and guests positive emotions and excellent mood.')

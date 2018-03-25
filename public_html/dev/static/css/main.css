@@ -4700,6 +4700,7 @@ html {
 }
 body {
   font-family: 'RubikLight', Arial, sans-serif;
+  color: #140e2a;
 }
 h1,
 h2,
@@ -4843,7 +4844,6 @@ button {
   padding: 0 30px 0 70px;
   font-family: 'RubikMedium', Arial, sans-serif;
   font-size: 28px;
-  color: #140e2a;
   background: -webkit-gradient(linear, left top, left bottom, from(#eecd7d), to(#ff8159));
   background: linear-gradient(to bottom, #eecd7d, #ff8159);
   border-radius: 30px;
@@ -5044,7 +5044,6 @@ header .container {
   padding: 0px 80px 80px 45%;
   background: url("../img/general/man.png") 0 0 no-repeat;
   background-size: contain;
-  color: #140e2a;
 }
 .about-me__content .g-section-title {
   margin-bottom: 50px;
@@ -5506,7 +5505,6 @@ header .container {
   background: url("../img/general/scenario-list-bg.jpg") 0 0 no-repeat;
   background-size: cover;
   border-radius: 10px;
-  color: #140e2a;
 }
 .scenario-list li {
   margin-bottom: 20px;
@@ -5700,6 +5698,141 @@ header .container {
 }
 .video-slider {
   border-bottom: none;
+}
+.stages {
+  padding: 70px 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1c4c53), to(#3e7173));
+  background: linear-gradient(to bottom, #1c4c53, #3e7173);
+}
+.stages__content .g-section-title {
+  margin-bottom: 60pxs;
+}
+.stages-item__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.stages-item {
+  position: relative;
+  width: 30%;
+  padding-left: 100px;
+  margin-bottom: 70px;
+  background: url("../img/general/big-arrow.png") right top no-repeat;
+  background-size: contain;
+}
+.stages-item__number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 65px;
+  height: 65px;
+  padding-top: 8px;
+  background-color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'RubikMedium', Arial, sans-serif;
+}
+.stages-item__title {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-family: 'RubikMedium', Arial, sans-serif;
+  color: #eecd7d;
+}
+.stages-item__text {
+  color: #fff;
+  font-size: 20px;
+}
+.questions {
+  padding: 70px 0;
+  background-color: #dde3e5;
+}
+.questions-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.questions-photo {
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
+  text-align: center;
+  font-size: 30px;
+}
+.questions-photo img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.question-photo__text {
+  display: block;
+}
+.question-photo__text:first-of-type {
+  margin-bottom: 15px;
+}
+.question-phone {
+  font-family: 'RubikMedium', Arial, sans-serif;
+}
+.question-list {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+.question {
+  margin-bottom: 20px;
+}
+.question:last-of-type {
+  margin-bottom: 0;
+}
+.question-title {
+  position: relative;
+  display: block;
+  min-height: 50px;
+  padding: 14px 70px 14px 16px;
+  cursor: pointer;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3188c5), to(#475e7d));
+  background: linear-gradient(to bottom, #3188c5, #475e7d);
+  color: #fff;
+  font-size: 25px;
+  font-family: 'RubikMedium', Arial, sans-serif;
+  border-radius: 20px;
+}
+.question-title:after {
+  content: '+';
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#eecc7c), to(#fe845a));
+  background: linear-gradient(to bottom, #eecc7c, #fe845a);
+  font-size: 30px;
+  font-family: 'RubikMedium', Arial, sans-serif;
+  color: #140e2a;
+  text-align: center;
+  line-height: 1;
+  border-radius: 50%;
+}
+.question-answer {
+  display: none;
+  padding: 0px 15px 20px;
+  font-size: 18px;
+}
+.question-answer p {
+  margin-bottom: 10px;
+}
+.question-answer p:last-of-type {
+  margin-bottom: 0;
 }
 @media screen and (max-width: 1240px) {
   .price {

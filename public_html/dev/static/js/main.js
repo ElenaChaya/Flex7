@@ -87,5 +87,20 @@ $(document).ready(function () {
         });
     });
     
+    function questions() {
+        var question = $('.question-title'),
+                answer = $('.question-answer');
+        question.click(function() {
+            var curAnswer = $(this).siblings(answer);
+            if(curAnswer.is(':visible')) {
+                curAnswer.slideUp();
+            } else {
+                curAnswer.slideDown();
+            }
+        });
+    }
+    
+    questions();
+    
 });
 

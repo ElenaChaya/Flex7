@@ -1,0 +1,76 @@
+.questions
+    padding 70px 0
+    background-color grayBgColor 
+
+.questions-content
+    display flex
+    justify-content space-between
+    align-items center
+
+.questions-photo
+    flex-basis 35%
+    text-align center
+    font-size 30px
+
+    img
+        width 100%
+        margin-bottom 30px
+
+.question-photo__text
+    display block
+
+    &:first-of-type
+        margin-bottom 15px
+
+.question-phone
+    font-family mediumFont
+
+
+.question-list
+    flex-basis 60%
+
+.question
+     margin-bottom 20px
+
+     &:last-of-type
+        margin-bottom  0
+
+.question-title
+    position relative
+    display block
+    min-height 50px
+    padding 14px 70px 14px 16px
+    cursor pointer
+    background linear-gradient(to bottom,#3188c5,#475e7d)
+    color #fff
+    font-size 25px
+    font-family mediumFont
+    border-radius 20px
+
+    &:after
+        content '+'
+        position absolute
+        right 10px
+        top 10px
+        display block
+        width 30px
+        height 30px
+        background linear-gradient(to bottom,#eecc7c,#fe845a)
+        font-size 30px
+        font-family mediumFont
+        color blackPurpleColor
+        text-align center
+        line-height 1
+        border-radius 50%
+
+
+.question-answer
+    display none
+    padding 0px 15px 20px
+    font-size 18px
+    
+    p 
+        margin-bottom 10px
+            
+        &:last-of-type
+            margin-bottom 0
