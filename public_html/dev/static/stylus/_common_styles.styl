@@ -65,6 +65,9 @@
     border 0
     box-shadow 0 0 40px 5px rgba(238, 205, 125, .4)
 
+    &.g-btn--no-icon
+       padding 0 30px 
+
     &:before
         content ''
         position absolute
@@ -89,13 +92,6 @@
         &:before
             sprite($s-calc)
 
-
-
-
-    
-
-    
-    
 
 .g-line-number
     position relative
@@ -157,5 +153,19 @@
         max-width: 750px;
         height: 1px;
         background-color: #fff;
+
+.g-list
+    li
+        position relative
+
+        &:last-child
+                margin-bottom 0
+
+        &:before
+                content ''
+                position absolute
+                display block
+    
+    
     
         

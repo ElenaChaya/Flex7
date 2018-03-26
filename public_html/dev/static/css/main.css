@@ -4851,6 +4851,9 @@ button {
   -webkit-box-shadow: 0 0 40px 5px rgba(238,205,125,0.4);
           box-shadow: 0 0 40px 5px rgba(238,205,125,0.4);
 }
+.g-btn.g-btn--no-icon {
+  padding: 0 30px;
+}
 .g-btn:before {
   content: '';
   position: absolute;
@@ -4953,6 +4956,17 @@ button {
   height: 1px;
   background-color: #fff;
 }
+.g-list li {
+  position: relative;
+}
+.g-list li:last-child {
+  margin-bottom: 0;
+}
+.g-list li:before {
+  content: '';
+  position: absolute;
+  display: block;
+}
 header {
   position: absolute;
   width: 100%;
@@ -5054,21 +5068,14 @@ header .container {
   margin-bottom: 50px;
 }
 .about-me__list li {
-  position: relative;
   padding-left: 60px;
   margin-bottom: 30px;
 }
-.about-me__list li:last-child {
-  margin-bottom: 0;
-}
 .about-me__list li:before {
-  content: '';
-  position: absolute;
   top: 5px;
   left: 30px;
-  display: block;
   background-image: url("../img/sprite/sprite.png");
-  background-position: -129px -75px;
+  background-position: -76px -120px;
   width: 21px;
   height: 18px;
 }
@@ -5306,13 +5313,13 @@ header .container {
 }
 .g-input__wrap.g-input__wrap--user:before {
   background-image: url("../img/sprite/sprite.png");
-  background-position: -76px -120px;
+  background-position: -112px -120px;
   width: 16px;
   height: 18px;
 }
 .g-input__wrap.g-input__wrap--phone:before {
   background-image: url("../img/sprite/sprite.png");
-  background-position: -107px -120px;
+  background-position: -143px -120px;
   width: 16px;
   height: 16px;
 }
@@ -5832,6 +5839,50 @@ header .container {
   margin-bottom: 10px;
 }
 .question-answer p:last-of-type {
+  margin-bottom: 0;
+}
+.bottom-form {
+  padding: 80px 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#211b38), to(#484d82));
+  background: linear-gradient(to bottom, #211b38, #484d82);
+}
+.bottom-form__content {
+  width: 100%;
+  max-width: 670px;
+  margin: 0 auto;
+  font-family: 'RubikMedium', Arial, sans-serif;
+}
+.bottom-form__list {
+  margin-bottom: 40px;
+  padding-left: 100px;
+}
+.bottom-form__list li {
+  padding-left: 40px;
+  margin-bottom: 15px;
+  color: #eecd7d;
+  font-size: 35px;
+}
+.bottom-form__list li:before {
+  top: 10px;
+  left: 0;
+  background-image: url("../img/sprite/sprite.png");
+  background-position: -129px -75px;
+  width: 25px;
+  height: 21px;
+}
+.bottom-form__text {
+  margin-bottom: 80px;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+}
+.form--bottom {
+  text-align: center;
+}
+.form--bottom .form-line {
+  margin-bottom: 30px;
+}
+.form--bottom .g-btn {
   margin-bottom: 0;
 }
 @media screen and (max-width: 1240px) {
