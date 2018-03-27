@@ -10,14 +10,49 @@ header
         display flex 
         justify-content space-between
         align-items center
-        padding 15px
+        padding 15px 10px
+
+    &.active
+        //position fixed
+        top 0
+        width 100%
+        z-index 10
+        background-color darkBgColor
+        
+        .header__social-list 
+            display none
+            
+        .author__block--header
+            display block
+            font-size 14px
+            
+            .author-block__title
+                font-size 18px
+            
+        .header-logo
+            display flex
+            align-items flex-start
+
+            img
+                width 60px
+                margin-right 10px
+
+        .header-phone
+            font-size 25px
+
+        .main-nav__list
+            font-size 20px
+
+
+.author__block--header
+    display none
 
 .header-phone
     margin-right 40px
     font-family mediumFont
     font-size 28px
 		
-.header-callback
+.header-call
     font-size 20px
     border-bottom 1px dashed #fff
 

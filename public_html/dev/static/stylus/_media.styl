@@ -1,243 +1,146 @@
-@media screen and (max-width 1240px)
-	.price
-		overflow hidden
-		
-		.container
-			width 100%
-			margin 0
-					
-	.price-item
-		height 650px
-		margin 0 40px 10px
-		
-	.g-list 
-		li 
-			margin-bottom 5px
-			line-height 25px
-
 @media screen and (max-width 1150px)
-	.review-slider__next, 
-	.review-slider__prev
-		display none
-					
-@media screen and (max-width 1100px)
-	.main-nav__list
-		
-		li 
-			margin-right 30px
-			
-	h1
-		font-size 40px
-		line-height 50px
-		
+    
+    .main-nav__list
+        font-size 20px
+
+        li
+            margin-right 10px
+            
+    .header-logo
+        
+        img
+            width 50px
+
+    .header-phone
+        font-size 20px
+
+    .header-call
+        font-size 18px
+
+    .header__social-list
+        bottom -10px
+
+    header
+        &.active
+            .header-contact
+                flex-direction column
+
+            .header-phone
+                margin-right 0
+                margin-bottom 10px
+                font-size 20px
+
+            .header-call
+                font-size 18px
+            
+    .top-banner__title
+        font-size 40px
+
+    .top-banner__text
+        font-size 25px
 
 @media screen and (max-width 950px)
-	.main-nav__list
-		
-		li 
-			margin-right 15px
-			
-	h1
-		font-size 35px
-		line-height 40px
-		
-	.about-us__text
-		font-size 22px
-		line-height 30px
-		
-		p 
-			margin-bottom 20px
-		
-	.doing 
-		
-		.container
-			overflow hidden
-			
-	.price-slider
-		position relative
-		
-		.slick-arrow
-			top 70px
-			
-	.g-list
-	
-		li 
-			
-			&:after
-				top 8px
-		
-	.price-item
-		height auto
-		margin 0 0 10px
-		
-	.price-item__bottom
-		position static
-		margin-top 30px
-		
-	.region-man__pic
-		display none
-		
-	.region
-		background-size 100%
-		background-position top center
-		.container
-			min-height auto
 
-		.open-form__wrap
-			position static 
-			height auto
+    .header-contact
+        flex-direction column
 
-			
-@media screen and (max-width 900px)
+    .header-phone
+        margin-right 0
+        margin-bottom 10px
 
-	.wrapper
-		position relative
-		width 100%
-		max-width 900px
-		overflow hidden
-		
-	.nav-mobile
-		display block
+    .header__social-list
+        bottom -20px
+        right 30px
 
-	.main-nav__list
-		//display none
-		position absolute
-		right -900px
-		top 95px
-		width 100%
-		max-width 320px
-		padding 45px 0 45px 30px
-		z-index 1
-		background-color purpureColor
-		transition all linear .8s
-		
-		
-		li 
-			display block 
-			margin-bottom 40px
-			
-			&:last-child
-				margin-bottom 0
-				
-	.top-banner
-		min-height 700px
-		
-	h1
-		margin-bottom 80px
-		
-	.about-us
-		padding 50px 0 100px
+     header
+        &.active
 
-	.about-us__text	
-		order 1
-		width 100%
-		margin-bottom 70px
-		font-size 18px	
-		
-	.about-us__img
-		order 2
-		width 100%	
-		
-	.why-content
-		padding 40px
+            .author__block--header
+                display none
 
-@media screen and (max-width 750px)
-	.invite-form
-		flex-wrap wrap 
-		
-		input
-			width 100%
+            .header-logo
+        
+                img
+                    width 50px
 
-@media screen and (max-width 500px)
-	
-	.container
-		width 100%
-		padding 0 15px
+    .top-banner
+        height 540px
+        padding-top 136px
+        
 
-	h1
-		padding 0 5px
-		font-size 24px
-		line-height 40px
-		
-	.open-form__wrap
-		padding 20px
-		height 250px
-		
-	.open-form__success
-		
-		display flex
-		height 100%
-		justify-content center
-		align-items center
+    .top-banner__content
+        padding-top 40px
 
-		&:before
-			display none
-			
-	.doing-descr
-		font-size 16px
-		line-height 30px
-		
-	.doing-icons__item
-		padding-top 100px
-		
-		&:after
-			right 40px
-			
-	.g-list 
-		li 
-		font-size 16px
-		
-		
-	.section-title
-		font-size 24px
-		
-	.about-us__text	
-		font-size 16px	
-		
-	.why-content
-		padding 20px
-		
-		.g-list 
-			li 
-				font-size 14px
-				
-	.review
-		.container
-			width 100%
-			margin 0
-			
-	.review-item__content
-		
-		iframe
-			min-height 190px
-			
-	footer
-		.container
-			flec-wrap wrap 	
-			
-	.footer-politic, 
-	.footer-phone 
-		flex-basis auto	
-		width 100%
-		text-align center
-		
-	.footer-politic
-		margin-bottom 15px	
+@media screen and (max-width 700px)
+    
+    header
+        background-color darkBgColor
+
+        &.active
+            position static
+            
+        .container
+            flex-wrap wrap
+
+    .header-logo
+        order 1
+
+    .header-contact
+        order 2
+
+    .header__social-list 
+        order 3
+        position static
+
+        li
+            display block
+            margin 5px 0
+
+    .main-nav__list
+        position absolute
+        top 100px
+        left 0
+        width 100%
+        text-align center
+        
+    .top-banner
+        padding-top 150px
+        height 485px
+
+    .top-banner__text
+        display none
+        
+    .top-banner__title
+        font-size 25px
+        
+@media screen and (max-width 500px)  
+    
+    .main-nav__list
+        font-size 16px
+        
+        li
+            margin-right 5px
+
+    .top-banner
+        height 439px
+
+    .top-banner__title
+        font-size 20px
 
 
-@media screen and (max-width 400px)
-		
-	.price
-		.g-list 
-			li 
-				b 
-					display block
-			
-		
-@media screen and (max-width 350px)
-	
-	h1
-		font-size 22px
-		
+@media screen and (max-width 400px)  
+    
+    .main-nav__list
+        font-size 14px
 
-		
+    .top-banner
+        height 350px
+
+    .top-banner__content
+        padding-top 0
+
+    .top-banner__title
+        font-size 18px
+
+        
+    

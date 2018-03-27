@@ -2,6 +2,22 @@
 
 $(document).ready(function () {
     
+    $('.popup-link').magnificPopup({
+        type: 'inline'
+	});
+        
+    $('.popup-close').click(function() {
+        $.magnificPopup.close();
+    });
+    
+    $(window).scroll(function() {
+        if($(window).scrollTop()>130) {
+            $('header').addClass('active');
+        } else {
+            $('header').removeClass('active');
+        }
+    });
+    
     $('.js-video-slider').slick({
         dots: true,
         arrows: false
@@ -101,6 +117,26 @@ $(document).ready(function () {
     }
     
     questions();
+    
+    $("form").on("submit", function() {
+        var formID = '#' + $(this).attr("id");
+        $(formID).validate({
+            rules: {
+                name: 'required',
+                phone: 'required'
+            },
+            messages: {
+                name: '',
+                phone: ''
+            }
+        });
+        if($(formID).valid()) {
+       
+           $(formID).parent().hide();
+           $(formID).parent().parent().find('.popup-success').addClass('success-show');
+        }
+        return false;
+    });
     
 });
 

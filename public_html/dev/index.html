@@ -16,13 +16,15 @@
       <header>
         <div class="container">
           <ul class="main-nav__list">
-                      <li> <a class="main-nav__link" href="#">Services</a></li>
-                      <li> <a class="main-nav__link" href="#">Cost</a></li>
-                      <li> <a class="main-nav__link" href="#">Portfolio</a></li>
-                      <li> <a class="main-nav__link" href="#">Reviews</a></li>
+                      <li> <a class="scroll-link main-nav__link" href="#Services">Services</a></li>
+                      <li> <a class="scroll-link main-nav__link" href="#Cost">Cost</a></li>
+                      <li> <a class="scroll-link main-nav__link" href="#Portfolio">Portfolio</a></li>
+                      <li> <a class="scroll-link main-nav__link" href="#Reviews">Reviews</a></li>
           </ul>
-          <div class="logo header-logo"><img src="static/img/general/logo.png" alt="Logo"></div>
-          <div class="header-contact"><a class="header-phone" href="tel:+1234567890">+1234567890 </a><a class="popup-link header-callback" href="#">Call</a></div>
+          <div class="logo header-logo"><img src="static/img/general/logo.png" alt="Logo">
+            <div class="author-block author__block--header"><span class="author-block__title">Baskov</span><span class="author-block__descr">Host to the wedding,<br> celebration and a party</span></div>
+          </div>
+          <div class="header-contact"><a class="header-phone" href="tel:+1234567890">+1234567890 </a><a class="popup-link header-call" href="#call">Call</a></div>
           <ul class="g-social__list header__social-list"> 
             <li><a class="g-social__link g-social__link--mail" href="javascript:void(0);"> </a></li>
             <li><a class="g-social__link g-social__link--fb" href="javascript:void(0);"></a></li>
@@ -76,12 +78,12 @@
       <section class="small-section small-section--date">
         <div class="container">
           <div class="small-section__content">
-            <h3 class="g-section-title g-section-title--small">Check if the date of your event is available:</h3><a class="g-btn g-btn--date arrow" href="javascript:void(0);">Check the date dsas</a>
+            <h3 class="g-section-title g-section-title--small">Check if the date of your event is available:</h3><a class="g-btn g-btn--date arrow" href="javascript:void(0);">Check the date</a>
             <p class="small-section__text">Or just call the number:<a class="small-section__phone" href="tel:1234567890"> 1234567890</a></p>
           </div>
         </div>
       </section>
-      <section class="advantages">
+      <section class="advantages" id="Services">
         <div class="container">
           <div class="advantages-content">
             <h2 class="g-section-title">What are you getting:</h2>
@@ -209,7 +211,7 @@
           </div>
         </div>
       </section>
-      <section class="portfolio">
+      <section class="portfolio" id="Portfolio">
         <div class="container">
           <div class="portfolio-content">
             <h2 class="g-section-title g-section-title--mini">Watch the video, and you <br> will understand the style of my work</h2>
@@ -321,7 +323,7 @@
           </div>
         </div>
       </section>
-      <section class="big-form">
+      <section class="big-form" id="Cost">
         <div class="container">
           <div class="big-form-content">
             <h2 class="g-section-title g-section-title--mini">Find out the cost of the services of the host</h2>
@@ -431,7 +433,7 @@
           </div>
         </div>
       </section>
-      <section class="reviews">
+      <section class="reviews" id="Reviews">
         <div class="container">
           <div class="reviews-content">
             <h2 class="g-section-title g-section-title--mini arrow">More than half of clients come to me on recommendations</h2>
@@ -601,6 +603,47 @@
           </div>
         </div>
       </section>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo logo"><img src="static/img/general/logo.png" alt="Logo">
+            <div class="author-block author__block--footer"><span class="author-block__title">Baskov</span><span class="author-block__descr">Host to the wedding,<br> celebration and a party</span></div>
+          </div>
+          <div class="footer-contacts"><a class="footer-phone" href="tel:+1234567890">+1234567890</a>
+            <ul class="g-social__list g-social__list--footer">
+              <li><a class="g-social__link g-social__link--mail" href="javascript:void(0);"> </a></li>
+              <li><a class="g-social__link g-social__link--fb" href="javascript:void(0);"></a></li>
+            </ul>
+          </div>
+          <div class="footer-portals"><span class="footer-portals__text">my <br> pages on <br> portals:</span>
+            <ul class="footer-portals__links">
+              <li><a href="https://www.linkedin.com/uas/login"><img src="static/img/svg/linkedin-logo (1).svg" alt="linkedin"></a></li>
+              <li><a href="https://www.linkedin.com/uas/login"><img src="static/img/svg/linkedin-logo (1).svg" alt="linkedin"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-copyright"><span>© 2017 All rights reserved.  </span><a href="javascript:void(0);">Copyright Policy</a></div>
+      </div>
+    </footer>
+    <div class="popup-form mfp-hide" id="call">
+      <div class="popup-close">&times;</div>
+      <div class="popup-form__wrap">
+        <form class="call-form" id="call-form"><span class="popup-form__title popup-title">Leave a request, and I will contact you shortly.</span>
+          <div class="popup-form-line">
+            <div class="g-input__wrap g-input__wrap--user">
+              <input class="g-input" type="text" placeholder="Enter your name" name="name">
+            </div>
+          </div>
+          <div class="popup-form-line">
+            <div class="g-input__wrap g-input__wrap--phone"> 
+              <input class="g-input" type="text" placeholder="Enter phone" name="phone">
+            </div>
+          </div>
+          <button class="g-btn g-btn--no-icon" type="submit" value="submit"><span>Submit</span></button>
+        </form>
+      </div>
+      <div class="popup-success"><span class="popup-success__title popup-title">Your application has been successfully submitted!</span><span class="popup-success__descr">In the near future I will contact you and answer all questions.</span></div>
     </div>
     <script src="static/js/jquery.js"></script>
     <script src="static/js/libs.min.js"></script>

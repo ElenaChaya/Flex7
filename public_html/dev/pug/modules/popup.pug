@@ -1,0 +1,17 @@
+.popup-form.mfp-hide#call
+    .popup-close &times;
+    .popup-form__wrap
+        form.call-form#call-form
+            span.popup-form__title.popup-title Leave a request, and I will contact you shortly.
+            .popup-form-line
+                .g-input__wrap.g-input__wrap--user
+                    input(type="text" placeholder="Enter your name" name="name").g-input
+            .popup-form-line
+                .g-input__wrap.g-input__wrap--phone  
+                    input(type="text" placeholder="Enter phone" name="phone").g-input
+            button(type="submit" value="submit").g-btn.g-btn--no-icon
+                span Submit
+                
+    .popup-success
+        span.popup-success__title.popup-title Your application has been successfully submitted!
+        span.popup-success__descr In the near future I will contact you and answer all questions.
