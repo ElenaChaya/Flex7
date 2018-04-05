@@ -35,7 +35,7 @@
     &.g-section-title--mini
         font-size 35px
 
-.g-dection-descr
+.g-section-descr
     margin-bottom 30px
     text-align center
     color #fff
@@ -135,20 +135,64 @@
     &:after
         right 0
 
-.slider__controlls, .portfolio-photo__controlls
+.slider
+    position: relative;
+    width 100%
+    margin 0 auto
+
+    button
+        
+        background-color Transparent
+        border none
+        
+
+.slider__controlls
     position absolute
     top 50%
     transform translateY(-50%)
     display block
     cursor pointer
 
-.slider__prev, .portfolio-photo__prev
+ .mobile__controlls
+    display none
+    position absolute
+    z-index 5
+    bottom 10px
+    cursor pointer
+    transform none
+    background-color Transparent
+    border none
+
+.slider__prev, .portfolio-photo__prev, .portfolio-video-slider__prev, .reviews-video-slider__prev
     left 0
     sprite($s-arrow-left)
 
-.slider__next, .portfolio-photo__next
+.slider__next, .portfolio-photo__next, .portfolio-video-slider__next, .reviews-video-slider__next
     right 0
     sprite($s-arrow-right)
+
+
+
+
+
+.slider
+    
+    .mob-portfolio-video-slider__prev, .mob-portfolio-photo__prev, .mob-reviews-video-slider__prev
+        left 30%
+        sprite($s-arrow-left-mob)
+
+        &:hover 
+            sprite($s-arrow-left-mob_hover)
+
+    .mob-portfolio-video-slider__next, .mob-portfolio-photo__next, .mob-reviews-video-slider__next
+        right 30%
+        sprite($s-arrow-right-mob)
+
+        &:hover 
+            sprite($s-arrow-right-mob_hover)
+
+
+
 
 .line
     &:after

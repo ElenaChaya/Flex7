@@ -6,10 +6,13 @@ mixin portfolioPhoto(title)
 section.portfolio#Portfolio
     .container
         .portfolio-content
-            h2.g-section-title.g-section-title--mini Watch the video, and you <br> will understand the style of my work
-            
-            .video-slider
-                .js-video-slider
+            h2.g-section-title.g-section-title--mini Watch the video, and you <br> will understand the style of my work         
+            .portfolio-video-slider.slider.video-slider
+                button.slider__controlls.portfolio-video-slider__prev
+                button.slider__controlls.portfolio-video-slider__next
+                button.mobile__controlls.mob-portfolio-video-slider__prev
+                button.mobile__controlls.mob-portfolio-video-slider__next
+                .js-video-slider.js-portfolio-video-slider
                     .video__item
                         iframe( width="100%" height="315" src="https://www.youtube.com/embed/09R8_2nJtjg?enablejsapi=1" frameborder="0" allowfullscreen id="port-vid-1")
                         
@@ -25,9 +28,11 @@ section.portfolio#Portfolio
                         
             .portfolio-photo
                 h2.g-section-title.g-section-title--mini The main result of my work <br> is your happy faces!
-            .portfolio-photo-slider 
-                .portfolio-photo__controlls.portfolio-photo__prev
-                .portfolio-photo__controlls.portfolio-photo__next
+            .portfolio-photo-slider.slider 
+                button.slider__controlls.portfolio-photo__prev
+                button.slider__controlls.portfolio-photo__next
+                button.mobile__controlls.mob-portfolio-photo__prev
+                button.mobile__controlls.mob-portfolio-photo__next
                 .js-portfolio-photo-slider
                     .portfolio-photo__item
                         +portfolioPhoto('001')
