@@ -45,7 +45,6 @@
 
     .about-me__content
         padding 0 20px 60px 45%
-        background-size 48%
         background-position left bottom
 
 
@@ -59,6 +58,35 @@
     .about-me__text
         font-size 22px
 
+    .stages-item
+        padding-left 50px
+
+    .stages-item__number, .footer-phone
+        font-size 30px
+
+    .stages-item__number
+        height 40px
+        width 40px   
+        padding-top 2px
+        
+    .stages-item__text
+        font-size 18px
+
+    .stages-item__title, .questions-photo
+        font-size 25px
+
+    .footer-logo
+        
+        img
+            width 50px
+
+    .author__block--footer
+        font-size 16px
+        
+        .author-block__title
+            font-size 18px
+
+    
 @media screen and (max-width 950px)
 
     .header-contact
@@ -96,7 +124,7 @@
         padding-top 30px
 
     .about-me__content
-        padding 0 10px 30px 45%
+        padding 0 10px 30px 50%
         
     .about-me__list
         margin-bottom 10px
@@ -125,6 +153,40 @@
 
         span
             font-size 80px
+
+    .reviews-slider
+
+        .review
+            max-width 450px
+
+    .stages
+        padding 30px 0 0
+
+    .stages-item
+       width 45%
+
+    .questions-photo
+        display none
+
+    .question-list
+        flex-basis 100%
+
+    .questions-title
+        font-size 18px
+
+    .footer-portals
+        flex-direction column
+        text-align center
+
+    .footer-portals__text
+        margin-right 0
+        margin-bottom 5px
+
+@media screen and (max-width 850px) 
+    
+    .about-me__content
+        background-size 45%
+
 
 @media screen and (max-width 750px) 
 
@@ -155,10 +217,13 @@
     .experience-item__number
         font-size 40px
 
-    .portfolio
+    .portfolio, .big-form
         padding 50px 0
 
+    .about-me__content 
 
+        .g-section-title
+            margin-bottom 20px
 
 @media screen and (max-width 700px)
     
@@ -199,7 +264,7 @@
     .top-banner__text
         display none
         
-    .top-banner__title
+    .top-banner__title, .experience__text, .advantages-text, .g-section-descr, .bottom-form__text
         font-size 25px
 
     .about-me__content
@@ -211,14 +276,7 @@
 
     .experience__text
         padding 0
-        font-size 25px
-        
-    .review-author
-        font-size 20px
 
-    .review-title, .experience__reviews-link 
-        font-size 18px
-    
     .g-section-title
         &.g-section-title--small
             font-size 25px
@@ -233,8 +291,6 @@
         display block
         text-align center
 
-    .advantages-text
-        font-size 25px
 
     .advantages-list
         font-size 18px
@@ -252,9 +308,6 @@
 
     .music-item__info
         text-align center
-
-    .g-section-descr
-        font-size 25px
 
     .scenario-list
         background none
@@ -275,11 +328,134 @@
         .mobile__controlls
             display block
 
+    .form-line__half
+        flex-direction column
+
+    .form-seasons__wrap
+
+        .g-radio
+            width 48%
+            margin 0 1% 10px
+
+    .form-personnel__wrap
+        display flex
+        flex-wrap wrap
+        
+        .g-radio
+            width 48%
+            margin 0 1% 10px
+
+        .g-radio__text
+            width 100%
+        
+    .form-line__title 
+
+        &.form-line__title--bottom
+            margin-bottom 5px
             
+    .form-guests, .form-line, .form-seasons
+        margin-bottom 20px
+
+    .form-price__bottom
+
+        .g-input__wrap
+            width 100%
+            margin-bottom 15px
+
+    .reviews-slider
+ 
+        .review-wrap 
+            text-align center
+            flex-direction row
+
+    .reviews-slider
+        .review-wrap
+            text-align center
             
-    .portfolio2-photo__prev, .portfolio2-photo__next
-        bottom -35px
+        
+            .review-photo
+                margin 0 auto 10px
+                
+            .review-title
+                margin-bottom 20px
+
+    .review-slider__item
+            text-align center        
+
+    .reviews-slider
+         .review 
+            max-width 100%
+            padding 0 5px
+
+    .review-author 
+        font-size 20px
+
+    .reviews-content 
+        .arrow
+            &:after
+                display none
+
+    .review-title, .experience__reviews-link 
+        font-size 18px
+
+
+    .js-stages-item__wrap
+        display block
+
+    .stages-item
+        width 100%
+        margin-bottom 30px
+
+    .bottom-form
+        padding 40px 0
+        
+    .bottom-form__list
+        padding-left 10%
             
+        li
+            font-size 25px
+
+            &:before
+                top 0
+
+    .form--bottom
+
+        .g-input__wrap
+            width 100%
+            margin-bottom 20px
+
+        .form-line
+            margin-bottom 0
+
+    .footer-content, .footer-contacts, .footer-logo
+        margin-bottom 35px
+
+    .footer-content
+        flex-direction column
+    
+    .footer-contacts
+        order 1
+        
+
+    .footer-logo
+        order 2
+        flex-direction column
+        align-items center
+        
+        img
+           margin-bottom 15px 
+
+        .author__block--footer
+            text-align center
+
+    .footer-portals
+        flex-direction row
+        order 3
+        justify-content center
+        text-align left
+
+    .footer-portals__text
+        margin-right 10px
 
 @media screen and (max-width 600px) 
 
@@ -349,8 +525,8 @@
     .experience-item__number
         font-size 25px
 
-    .experience__text
-            font-size 20px
+    .experience__text, .big-form__text, .bottom-form__text
+        font-size 20px
 
     .advantages
         padding 70px 0
@@ -387,9 +563,33 @@
     .g-btn
         font-size 22px
 
+    .reviews
+        padding 40px 0 10px
+
+    .reviews-content 
+
+        .g-section-title
+            margin-bottom 20px
+
+    .reviews-slider
+
+        &:after
+            margin 10px auto 40px
+
+    .bottom-form__list
+        padding-left 5%
+            
+        li
+            font-size 20px
+
+    .bottom-form__text
+        margin-bottom 30px
+
+
+
 @media screen and (max-width 400px)  
     
-    .main-nav__list
+    .main-nav__list, .g-radio__text, .question-answer
         font-size 14px
 
     .top-banner
@@ -398,7 +598,8 @@
     .top-banner__content
         padding-top 0
 
-    .top-banner__title, .advantages-text, .about-me__text, .small-section__text, .g-btn
+    .top-banner__title, .advantages-text, .about-me__text, .small-section__text, .g-btn, 
+    .form-line__title, .big-form__text
         font-size 18px
 
     .about-me__list
@@ -427,7 +628,7 @@
         .experience__text
             font-size 18px
 
-    .review-title, .advantages-list, .music-item__text
+    .review-title, .advantages-list, .music-item__text, .question-title, .bottom-form__text, .footer-copyright
         font-size 16px
 
     .g-section-title
@@ -445,7 +646,26 @@
     .music-item__title
         font-size 25px
 
-    
-    
+    .form-price__top
+        padding 20px 5px
+
+    .form-price__bottom
+        padding 20px 10px
 
 
+    .bottom-form__list
+       
+        li
+            font-size 16px
+
+    .bottom-form__text
+        margin-bottom 20px
+
+    .footer-phone
+        font-size 20px
+
+    .footer-copyright
+        text-align center
+        
+        span
+            margin-right 0

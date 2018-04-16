@@ -6,27 +6,30 @@ section.reviews#Reviews
         .reviews-content
             h2.g-section-title.g-section-title--mini.arrow More than half of clients come to me on recommendations
             .reviews-slider.slider.line
-                .slider__controlls.slider__prev
-                .slider__controlls.slider__next
+                .slider__controlls.reviews-slider__prev.slider__prev
+                .slider__controlls.reviews-slider__next.slider__next
+                button.mobile__controlls.reviews-slider-mobile__prev.mob-prev
+                button.mobile__controlls.reviews-slider-mobile__next.mob-next
                 .js-reviews-slider
                     .review-slider__item
-                        .review-wrap
+                        .review-wrap.one
                             +reviewPhoto('1')
                             .review 
-                                span.review-author Name Surname:
+                                span.review-author Name 1Surname:
                                 a(href="https://www.facebook.com/nikolai.baskov").review-link facebook.com/nikolai.baskov
-                                p.review-title "... Prepared an interesting script and held a wedding at the highest level ..."
+                                p.review-title "... 1Prepared an interesting script and held a wedding at the highest level ..."
                                 p.review-text Thank you for the perfectly organized wedding)))
                                     b  Everything was just super.
                                     |  You have prepared an interesting wedding script and held a wedding at the highest level. My husband and our guests were delighted with your professionalism.
                                     b  I recommend it to everyone - if you want a really cheerful wedding, where each guest will have something of their own - contact us !!!
 
-                        .review-wrap.review-wrap--right
+                     
+                        .review-wrap.review-wrap--right.two
                             +reviewPhoto('2')
                             .review 
-                                span.review-author Name Surname:
+                                span.review-author Name 2Surname:
                                 a(href="https://www.facebook.com/nikolai.baskov").review-link facebook.com/nikolai.baskov
-                                p.review-title "... Everything was kind, cozy and fun."<br>You have a wonderful script and well-chosen music, all the wishes are taken into account, all the guests were having fun and dancing with all their heart! ... "
+                                p.review-title "... 2Everything was kind, cozy and fun."<br>You have a wonderful script and well-chosen music, all the wishes are taken into account, all the guests were having fun and dancing with all their heart! ... "
                                 p.review-text 
                                     b We are very glad that they addressed you!
                                     |  Our wedding was a great success thanks to you! Everything was kind, cozy and fun. We were delighted! You have a wonderful script and well-chosen music, all the wishes are taken into account, all the guests were having fun and dancing with all their heart!
@@ -34,23 +37,24 @@ section.reviews#Reviews
                                     |  Guests and we liked all the songs in his performance !!! Our holiday was very cheerful and flew in one go largely thanks to you!
 
                     .review-slider__item
-                        .review-wrap
+                        .review-wrap.three
                             +reviewPhoto('3')
                             .review 
-                                span.review-author Name Surname:
+                                span.review-author Name 3Surname:
                                 a(href="https://www.facebook.com/baskov").review-link facebook.com/baskov
-                                p.review-title "... Prepared an interesting script and held a wedding at the highest level ..."
+                                p.review-title "... 3Prepared an interesting script and held a wedding at the highest level ..."
                                 p.review-text Thank you for the perfectly organized wedding)))
                                     b  Everything was just super.
                                     |  You have prepared an interesting wedding script and held a wedding at the highest level. My husband and our guests were delighted with your professionalism.
                                     b  I recommend it to everyone - if you want a really cheerful wedding, where each guest will have something of their own - contact us !!!
 
-                        .review-wrap.review-wrap--right
+                      
+                        .review-wrap.review-wrap--right.four
                             +reviewPhoto('4')
                             .review 
-                                span.review-author Name Surname:
+                                span.review-author Name 4Surname:
                                 a(href="https://www.facebook.com/baskov").review-link facebook.com/baskov
-                                p.review-title "... Everything was kind, cozy and fun."<br>You have a wonderful script and well-chosen music, all the wishes are taken into account, all the guests were having fun and dancing with all their heart! ... "
+                                p.review-title "... 4Everything was kind, cozy and fun."<br>You have a wonderful script and well-chosen music, all the wishes are taken into account, all the guests were having fun and dancing with all their heart! ... "
                                 p.review-text 
                                     b We are very glad that they addressed you!
                                     |  Our wedding was a great success thanks to you! Everything was kind, cozy and fun. We were delighted! You have a wonderful script and well-chosen music, all the wishes are taken into account, all the guests were having fun and dancing with all their heart!
@@ -61,10 +65,10 @@ section.reviews#Reviews
             h2.g-section-title.g-section-title--mini See live feedback from our customers
             p.g-section-descr Pleasant impressions speak for themselves
             .reviews-video-slider.slider.video-slider
-                button.slider__controlls.reviews-video-slider__prev
-                button.slider__controlls.reviews-video-slider__next
-                button.mobile__controlls.mob-reviews-video-slider__prev
-                button.mobile__controlls.mob-reviews-video-slider__next
+                button.slider__controlls.slider__prev.reviews-video-slider__prev
+                button.slider__controlls.slider__next.reviews-video-slider__next
+                button.mobile__controlls.mob-prev.mob-reviews-video-slider__prev
+                button.mobile__controlls.mob-next.mob-reviews-video-slider__next
                 .js-video-slider.js-reviews-video-slider
                     .video__item
                         iframe( width="100%" height="315" src="https://www.youtube.com/embed/09R8_2nJtjg?enablejsapi=1" frameborder="0" allowfullscreen id="port-vid-5")

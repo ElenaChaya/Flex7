@@ -163,28 +163,25 @@
     background-color Transparent
     border none
 
-.slider__prev, .portfolio-photo__prev, .portfolio-video-slider__prev, .reviews-video-slider__prev
+.slider__prev
     left 0
     sprite($s-arrow-left)
 
-.slider__next, .portfolio-photo__next, .portfolio-video-slider__next, .reviews-video-slider__next
+.slider__next
     right 0
     sprite($s-arrow-right)
 
 
-
-
-
 .slider
     
-    .mob-portfolio-video-slider__prev, .mob-portfolio-photo__prev, .mob-reviews-video-slider__prev
+    .mob-prev
         left 30%
         sprite($s-arrow-left-mob)
 
         &:hover 
             sprite($s-arrow-left-mob_hover)
 
-    .mob-portfolio-video-slider__next, .mob-portfolio-photo__next, .mob-reviews-video-slider__next
+    .mob-next
         right 30%
         sprite($s-arrow-right-mob)
 
@@ -226,6 +223,8 @@
         font-size 20px
         font-family mediumFont
         color lightYellowColor
+
+
 
     
     
